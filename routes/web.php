@@ -11,6 +11,25 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+use Illuminate\Support\Facades\Route;
+
+Route::group([
+    'as' => 'app.'
+], function () {
+    /**
+     **Un authenticated route of application
+     **/
+    Route::group([
+        'middleware' => 'web'
+    ], function () {
+        Route::get('/','HomeController@index')->name('home');
+    });
+    /**
+     **Authenticated route of application
+     **/
+    Route::group([
+        'middleware' => 'auth'
+    ], function () {
+
+    });
 });
