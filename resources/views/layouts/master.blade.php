@@ -10,8 +10,8 @@
     <meta name="author" content="">
     <link rel="icon" href="" type="image/png" sizes="128x128">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ asset('css/app.css?version='.$version) }}">
     <link rel="stylesheet" href="{{ asset('css/common.css?version='.$version) }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css?version='.$version) }}">
     <title>
         @hasSection('pageTitle')
             @yield('pageTitle')
