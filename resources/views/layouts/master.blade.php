@@ -26,7 +26,7 @@
         @yield('content')
     </div>
     <!-- Scripts -->
-
+    <script src="{{ asset('js/common.js') }}"></script>
     @stack('script')
 </body>
 </html>
